@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9E1B34; 
+}
+
+header {
+    display: flex; 
+    align-items: center; 
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+}
+
+.profile-pic {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    margin-right: 20px;
+    object-fit: cover; 
+    border: 3px solid white; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 0.5rem 1rem;
+}
+
+nav .navbar {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .navbar li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav .navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .navbar li a:hover {
+    text-decoration: underline; 
+}
+
+section {
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-card {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skills-card:hover {
+    transform: scale(1.1); /* ขยายเมื่อ Hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.hamburger {
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    nav .navbar {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    
+    #about {
+        background-color: #FFE5E5; /* สีชมพูอ่อน */
+    }
+    
+    #education {
+        background-color: #FFF8E1; /* สีเหลืองอ่อน */
+    }
+    
+    #skills {
+        background-color: #E8F5E9; /* สีเขียวอ่อน */
+    }
+    
+    #contact {
+        background-color: #E3F2FD; /* สีฟ้าอ่อน */
+    }
+    
+    section {
+        animation: fadeIn 1s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    ol li i {
+        margin-right: 10px;
+        color: #4CAF50;
+    }
+    
+   
+}
